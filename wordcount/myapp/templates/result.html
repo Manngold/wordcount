@@ -1,0 +1,11 @@
+<h1>Total word is : {{total}}</h1>
+
+<a href="{%url 'home'%}">try again</a>
+<br>
+<h2>Input text : {{fulltext}}</h2>
+<br>
+<h2>Word Count</h2>
+{% for word, count in dictionary%}
+
+<h3>{{word}} : {{count}}</h3>
+{% endfor %}
